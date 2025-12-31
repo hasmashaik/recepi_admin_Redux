@@ -1,73 +1,65 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🍽️ Recipe Admin Panel
 
-Currently, two official plugins are available:
+A simple Recipe Admin Panel built using React, Redux Toolkit, TypeScript, and Tailwind CSS.
+This project demonstrates modular architecture, state management using Redux, and clean UI design.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 Live Demo: https://recepi-admin-redux.vercel.app
 
-## React Compiler
+🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Admin dashboard for managing recipes
 
-## Expanding the ESLint configuration
+Modular structure (each recipe module has its own slice, pages, and components)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+State management using Redux Toolkit
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Responsive UI with Tailwind CSS
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Routing using React Router DOM
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Mock data for development
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+🛠️ Tech Stack
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+React.js
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+TypeScript
+
+Redux Toolkit
+
+Tailwind CSS
+
+React Router DOM
+
+📂 Project Structure
+src/
+ ├── modules/
+ │    └── recipes/
+ │         ├── pages/
+ │         ├── components/
+ │         ├── redux/
+ │         └── data/
+ ├── store/
+ ├── routes/
+ └── App.tsx
+
+⚙️ Installation & Setup
+git clone https://github.com/your-username/recipe-admin-redux.git
+cd recipe-admin-redux
+npm install
+npm run dev
+
+🎯 Purpose of This Project
+
+To understand Redux Toolkit in a real-world admin panel
+
+To practice TypeScript with React
+
+To build scalable and maintainable frontend architecture
+
+👩‍💻 Developer
+
+Hasma Shaik
+Java Full Stack Developer | React & Redux Learner
