@@ -1,7 +1,5 @@
 # React + TypeScript + Vite
-
 🍽️ Recipe Admin Panel
-
 A simple Recipe Admin Panel built using React, Redux Toolkit, TypeScript, and Tailwind CSS.
 This project demonstrates modular architecture, state management using Redux, and clean UI design.
 
